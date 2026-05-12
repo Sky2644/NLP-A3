@@ -51,6 +51,7 @@ def ensure_nltk_resource(resource_path, download_name):
 
 
 HAVE_PUNKT = ensure_nltk_resource("tokenizers/punkt", "punkt")
+ensure_nltk_resource("tokenizers/punkt_tab", "punkt_tab")
 HAVE_STOPWORDS = ensure_nltk_resource("corpora/stopwords", "stopwords")
 HAVE_WORDNET = ensure_nltk_resource("corpora/wordnet", "wordnet")
 HAVE_TAGGER = ensure_nltk_resource("taggers/averaged_perceptron_tagger", "averaged_perceptron_tagger")
